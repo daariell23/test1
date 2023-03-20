@@ -3,7 +3,16 @@ import { Header , Body, Footer} from './component/web';
 
 function App() {
   const handleClick = () => {
-    alert("I love U, Dendy");
+    var randomNumber = Math.floor(Math.random() * 2) + 1;
+    switch (randomNumber) {
+      case 1:
+        alert("I love U, Dendy");
+        break;
+      case 2: 
+        alert("Will u marry me, Dendy?");
+        break;
+    }
+    
   };
   return (
     <div>
